@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset ="UTF-8">
+        <title>Employee Data Management</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Employee Data Management</h1>
+            </div>
+        </div>
+        <tbody id="add-employee-row"></tbody>
+    </table>
+
+    <form role="form" id="form-design">
+      <div class="form-group">
+        <label for="name-input">Employee Name</label><br>
+        <input class="form-control" id="name-input" type="text">
+      </div>
+      <div class="form-group">
+        <label for="role-input">Role</label><br>
+        <input class="form-control" id="role-input" type="text">
+      </div>
+      <div class="form-group">
+        <label for="start-date-input">Start Date</label><br>
+        <input class="form-control" id="start-date-input" type="text">
+      </div>
+      <div class="form-group">
+        <label for="monthly-rate-input">Monthly Rate</label><br>
+        <input class="form-control" id="monthly-rate-input" type="number">
+      </div>
+      <button class="btn btn-default" id="add-employee" type="submit">ADD</button>
+    </form>
+    <div class="col-lg-6">
+        <div class="card card-default">
+          <div class="card-header">
+            Most Recent Member
+          </div>
+          <div class="card-body" id="recent-member">
+            <h2 id="name-display"></h2>
+            <h4 id="email-display"></h4>
+            <h4 id="age-display"></h4>
+            <p id="comment-display"></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  
+    <div id="test"></div>
+  
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+  <script src="http://momentjs.com/downloads/moment.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+  <script src="employee.js"></script>
+    </body>
+</html>
